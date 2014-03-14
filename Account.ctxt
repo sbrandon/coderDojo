@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=accountNumber\ person
+comment0.target=Account(java.lang.String,\ Person)
+comment1.params=amount
+comment1.target=void\ deposit(double)
+comment1.text=\r\n\ This\ method\ adds\ money\ into\ the\ account.\r\n\ It\ takes\ an\ amount\ as\ a\ parameter.\r\n\ the\ amount\ taken\ in\ is\ added\ to\ the\ balance.\r\n\ We\ print\ a\ line\ to\ show\ what\ has\ happened.\r\n
+comment2.params=amount
+comment2.target=void\ withdraw(double)
+comment2.text=\r\n\ This\ method\ takes\ away\ money\ from\ the\ account.\r\n\ It\ takes\ an\ amount\ as\ a\ parameter.\r\n\ the\ amount\ taken\ away\ from\ the\ balance.\r\n\ We\ print\ a\ line\ to\ show\ what\ has\ happened.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getAccountNumber()
+comment3.text=\r\n\ The\ following\ methods\ are\ called\ 'get'\ methods.\ They\ are\ used\ to\ return\r\n\ variables\ in\ the\ class.\ Notice\ that\ our\ return\ type\ has\ changed\ from\ 'void'\ to\ 'String'\ in\ this\ case\r\n\ so\ we\ are\ returning\ a\ String\ value.\ Test\ it\ and\ see\ what\ happens\!\r\n
+comment4.params=
+comment4.target=double\ getBalance()
+numComments=5

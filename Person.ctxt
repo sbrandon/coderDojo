@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=name\ phoneNumber\ age
+comment0.target=Person(java.lang.String,\ java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment1.text=\r\n\ The\ following\ methods\ are\ called\ 'get'\ methods.\ They\ are\ used\ to\ return\r\n\ variables\ in\ the\ class.\ Notice\ that\ our\ return\ type\ has\ changed\ from\ 'void'\ to\ 'String'\ in\ this\ case\r\n\ so\ we\ are\ returning\ a\ String\ value.\ Test\ it\ and\ see\ what\ happens\!\r\n
+comment2.params=
+comment2.target=java.lang.String\ phoneNumber()
+comment3.params=
+comment3.target=int\ getAge()
+numComments=4
