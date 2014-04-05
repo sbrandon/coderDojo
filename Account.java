@@ -13,10 +13,35 @@ public class Account
     private Person person;
     
     //Constructor
-    public Account(String accountNumber, Person person){
-        this.accountNumber = accountNumber;
+    public Account(Person person){
+        this.accountNumber = generateAccountNumber(person); //Calling a method
         this.balance = 0; //All accounts start with a balance of €0
         this.person = person;
+    }
+    
+    /* 
+     * This method generates an account number
+     * using the persons phone number and name.
+     * To do this we need to take in a person object
+     * as a parameter.
+     * Why use the phone number?
+     */
+    public String generateAccountNumber(Person person){
+        String name  = person.getName();
+        String phoneNumber = person.getPhoneNumber();
+        String newAccountNumber = phoneNumber + name.charAt(0) + name.charAt(1) + name.charAt(2);
+        return newAccountNumber;
+    }
+    
+    public void transfer(double amount, Account payeeAccount){
+        if(balance - amount < 0){
+            System.out.println("Sorry you don't have enough money in your account to make the transfer.");
+        }
+        else{
+            balance = balance - amount;
+            payeeAccount.deposit(amount);
+            System.out.println("You transfered €" + amount + " to " + payeeAccount.person.getName() + " account. Your balance is now €" + balance);
+        }
     }
     
     /*
@@ -37,8 +62,13 @@ public class Account
      * We print a line to show what has happened.
      */
     public void withdraw(double amount){
-        balance = balance - amount;
-        System.out.println("You took €" + amount + " out of your account. Your balance is now €" + balance);
+        if(balance - amount < 0){
+            System.out.println("Sorry you don't have enough money in your account.");
+        }
+        else{
+            balance = balance - amount;
+            System.out.println("You took €" + amount + " out of your account. Your balance is now €" + balance);
+        }
     }
     
     /*

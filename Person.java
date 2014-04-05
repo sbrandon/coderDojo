@@ -31,7 +31,7 @@ public class Person
     }
     
     //Get the persons phoneNumber
-    public String phoneNumber(){
+    public String getPhoneNumber(){
         return phoneNumber;
     }
     
